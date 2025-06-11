@@ -1,40 +1,55 @@
 {
-  "name": "word-counter-everyday",
-  "displayName": "Word Counter Every Day",
-  "description": "Record the number of characters input and deleted in VS Code in a day, which is convenient for counting daily English - related coding workload.",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.100.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:hello-vscode.helloWorld"    // 激活命令
-  ],
-  "main": "./extension.js",
-  "contributes": {
-    "commands": []
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.100.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "20.x",
-    "eslint": "^9.25.1",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.5.2"
-  },
-  "keywords": [
-    "character count",
-    "VS Code",
-    "input statistics",
-    "deletion statistics",
-    "English",
-    "coding workload"
-  ]
+    "name": "code-word-counter", 
+    "displayName": "Code Word Counter",
+    "description": "Record the number of characters input and deleted in VS Code in a day, which is convenient for counting daily coding workload.",
+    "version": "1.0.0", 
+    "publisher": "2322312693", 
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "icon": "images/logo.png", 
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-daily-char-stats.resetCharCount",
+                "title": "Reset Daily Character Statistics"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/your-repo/vscode-daily-char-stats.git" 
+    },
+    "bugs": {
+        "url": "https://github.com/your-repo/vscode-daily-char-stats/issues" 
+    },
+    "homepage": "https://github.com/your-repo/vscode-daily-char-stats/blob/main/README.md", 
+    "license": "MIT",
+    "keywords": [
+        "character count",
+        "VS Code",
+        "input statistics",
+        "deletion statistics",
+        "coding workload"
+    ],
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.100.0",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "20.x",
+        "eslint": "^9.25.1",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.5.2"
+    }
 }

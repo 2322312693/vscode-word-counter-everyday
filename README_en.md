@@ -1,4 +1,4 @@
-# VSCode Daily Input Statistics
+# Code Word Counter
 
 A lightweight VSCode extension that tracks your daily typing activity and helps you monitor your coding productivity.
 
@@ -31,7 +31,7 @@ The extension tracks each input action (typing, pasting, etc.) and displays the 
 
 1. Open VSCode
 2. Go to Extensions (Ctrl+Shift+X)
-3. Search for "VSCode Daily Input Statistics"
+3. Search for "Code Word Counter"
 4. Click Install
 
 ## 📈 Usage
