@@ -1,0 +1,17 @@
+// 在新窗口内启动扩展程序的启动配置
+// 使用 IntelliSense 了解可能的属性。
+// 将鼠标悬停在扩展程序上即可查看现有属性的描述。
+// 更多信息，请访问：https://go.microsoft.com/fwlink/?linkid=830387
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Run Extension",
+			"type": "extensionHost",
+			"request": "launch",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}"
+			]
+		}
+	]
+}
